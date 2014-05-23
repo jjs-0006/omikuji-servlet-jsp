@@ -31,7 +31,7 @@ public class Omikuji extends HttpServlet {
 		// TODO Auto-generated method stub
 	    response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("result.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/result.jsp");
         int num = (int)Math.floor(Math.random() * 5);
         String result = "";
         switch(num){
